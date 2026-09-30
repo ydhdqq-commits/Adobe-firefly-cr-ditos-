@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding-top:40px}
-video.bg{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:-1}
-.wrap{width:90%;max-width:380px;background:rgba(0,0,0,0.18);border:1px solid #ff3d00;border-radius:24px;padding:22px;text-align:center;color:white;backdrop-filter:blur(12px)}
-h1{color:#ff6a00}
-.btn{display:block;padding:16px;border-radius:14px;margin:12px 0;font-weight:900;text-decoration:none;color:white}
-.n{background:#ff4d00}.v{onclick="window.open('https://wa.me/5493516244122?text=Hola',"_blank")" style="cursor:pointer;onclick="window.open('https://wa.me/5493516244122?text=Hola','_blank')" style="cursor:pointer;background:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;background:#111 url('https://images.unsplash.com/photo-1518895949257-7621c3c786d7') center/cover no-repeat;display:flex;justify-content:center;align-items:center;padding:16px;font-family:system-ui}
+.card{width:100%;max-width:400px;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);border:1.5px solid #ff5500;border-radius:26px;padding:26px 20px;text-align:center;margin-top:30px}
+h1{color:#ff6a00;font-weight:900;font-size:30px}
+.sub{color:#ddd;margin:8px 0}
+.num{color:#fff;font-size:60px;font-weight:900}
+.cred{color:#ff6a00;letter-spacing:3px;margin-bottom:16px}
+.list{color:#fff;text-align:left;width:fit-content;margin:0 auto 18px;line-height:1.6}
+.btn-orange{display:block;background:#ff5500;color:#fff;padding:16px;border-radius:14px;font-weight:900;text-decoration:none;margin-bottom:10px}
+.btn-green{display:block;background:#25D366;color:#fff;padding:15px;border-radius:14px;font-weight:800;text-decoration:none}
+.pay{background:#fff;border-radius:14px;padding:12px;margin-top:12px}
+.pay-title{font-size:11px;letter-spacing:2px;color:#777;font-weight:800;margin-bottom:8px}
 </style></head>
 <body>
-<div style="background:red;color:white;padding:7px 0;font-weight:900;position:fixed;top:0;left:0;width:100%;z-index:9999;text-align:center"><marquee scrollamount="9">🔥 CREA SIN LIMITES - 50.000 CREDITOS - ENTREGA 5 MIN 🔥</marquee></div>
-<video class="bg" autoplay muted loop playsinline><source src="colibri.mp4" type="video/mp4"></video>
-<div class="overlay"></div>
-<div class="wrap">
+<div style="position:fixed;top:0;left:0;right:0;background:red;color:#fff;text-align:center;padding:7px;font-weight:800;z-index:10">🔥 50.000 CREDITOS - ENTREGA 5 MIN 🔥</div>
+<div class="card">
 <h1>⚡ PREMIUM STORE CBA</h1>
-<p>Distribuidor Oficial Adobe Firefly</p>
-<h2 style="font-size:56px;margin:10px 0">50.000</h2>
-<p style="color:#ff6a00;letter-spacing:3px">CREDITOS GENERATIVOS</p>
-<p>✔ 50.000 Creditos<br>✔ Cuenta Privada<br>✔ Entrega 5-10 Min<br>✔ Garantia Total</p>
-<a class="btn n" href="#">🚀 <a href="" target=_blank>CONSULTAR PRECIO HOY</a>
-<a class="btn v" href="#">💬 <a href="" target=_blank>WhatsApp</a>
-
-<div style="margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.15)">
-<p style="font-size:11px;color:#fff;opacity:0.7;margin:0 0 8px 0;letter-spacing:1px">MEDIOS DE PAGO</p>
-<div style="display:flex;justify-content:center;gap:8px;flex-wrap:wrap;align-items:center">
-<img src="uala.jpg" style="width:46px;height:30px;object-fit:contain;background:white;border-radius:6px;padding:2px">
-<img src="naranja.jpg" style="width:46px;height:30px;object-fit:contain;background:white;border-radius:6px;padding:2px">
-<img src="master.jpg" style="width:46px;height:30px;object-fit:contain;background:white;border-radius:6px;padding:2px">
-<img src="mercado.jpg" style="width:46px;height:30px;object-fit:contain;background:white;border-radius:6px;padding:2px">
-<img src="lemon.jpg" style="width:46px;height:30px;object-fit:contain;background:white;border-radius:6px;padding:2px">
+<div class="sub">Distribuidor Oficial Adobe Firefly</div>
+<div class="num">50.000</div>
+<div class="cred">CREDITOS GENERATIVOS</div>
+<div class="list">✔ 50.000 Creditos<br>✔ Cuenta Privada<br>✔ Entrega 5-10 Min<br>✔ Garantia Total</div>
+<a class="btn-orange" href="https://wa.me/5493516244122?text=Hola%20quiero%20los%2050.000%20creditos" target="_blank">🚀 CONSULTAR PRECIO HOY</a>
+<a class="btn-green" href="https://wa.me/5493516244122?text=Hola" target="_blank">💬 WhatsApp</a>
+<div class="pay"><div class="pay-title">MEDIOS DE PAGO</div>uala • NX • Mastercard • Lemon<br><span style="font-size:10px;color:#888">Transferencia • Tarjetas • QR • Crypto</span></div>
 </div>
-<p style="font-size:10px;color:#aaa;margin:6px 0 0 0">Transferencia • Tarjetas • QR • Crypto</p>
-</div>
-</div>
-</body></html>
+</body>
+</html>
