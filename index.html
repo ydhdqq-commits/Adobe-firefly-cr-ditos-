@@ -2,22 +2,79 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <style>
-body{margin:0;display:grid;place-items:center;min-height:100vh;color:#fff;font-family:system-ui;background:#000;overflow:hidden}
-video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-i{position:fixed;inset:0;background:#0006;z-index:-1}
-.c{width:90%;max-width:360px;background:#111d;border:2px solid #f60;border-radius:20px;padding:14px;text-align:center}
-.k{display:block;padding:10px;border-radius:10px;font-weight:900;text-decoration:none;margin-top:8px}
-.p{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin-top:10px;background:#fff;border-radius:10px;padding:6px}
-.p img{height:26px;border-radius:6px}
+body{margin:0;min-height:100vh;display:grid;place-items:center;
+color:#fff;font-family:system-ui;background:#000;overflow:hidden}
+video{position:fixed;inset:0;width:100%;height:100%;
+object-fit:cover;z-index:-2;filter:blur(2px)}
+.ov{position:fixed;inset:0;background:linear-gradient(#0003,#000a);
+z-index:-1}
+.card{width:90%;max-width:390px;background:#111e;
+border:2px solid #f60;border-radius:22px;padding:16px;
+text-align:center;box-shadow:0 0 30px #000}
+.top{display:inline-block;border:1px solid #f60;
+color:#f60;border-radius:99px;padding:6px 14px;
+font-weight:800;font-size:12px;margin-bottom:12px}
+.timer{background:#f60;border-radius:12px;padding:9px;
+font-weight:800;margin-bottom:14px}
+.big{font-size:56px;font-weight:900;line-height:1}
+.sub{font-weight:700;margin-top:4px}
+.list{background:#000a;border-radius:12px;padding:12px;
+margin:14px 0;text-align:left;font-size:14px}
+.btn{display:block;padding:13px;border-radius:12px;
+font-weight:900;text-decoration:none;margin-bottom:10px}
+.b1{background:#f60;color:#fff}
+.b2{background:#22c55e;color:#000}
+.small{font-size:12px;opacity:.9}
+.pills{display:flex;gap:6px;flex-wrap:wrap;
+justify-content:center;margin:10px 0}
+.pills span{background:#222;border:1px solid #444;
+border-radius:99px;padding:4px 8px;font-size:11px}
+.pay{background:#fff;border-radius:12px;padding:8px;
+display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.pay img{height:28px;border-radius:6px}
+.wa{position:fixed;right:14px;bottom:14px;background:#22c55e;
+width:52px;height:52px;border-radius:50%;
+display:grid;place-items:center;font-size:28px}
 </style>
 <video autoplay muted loop playsinline src="colibri.mp4"></video>
-<i></i>
-<div class=c>
-⚡ PREMIUM STORE CBA<br><br>
-<b style="font-size:48px">50.000</b><br>Firefly Premium<br><br>
-<a class=k style="background:#f60;color:#fff" href="#">CONSULTAR PRECIO</a>
-<a class=k style="background:#22c55e;color:#000" href="#">WhatsApp</a>
-<div class=p>
-<img src="mercado.jpg"><img src="naranja.jpg"><img src="master.jpg"><img src="lemon.jpg"><img src="uala.jpg">
+<div class=ov></div>
+<div class=card>
+<div class=top>⚡ PREMIUM STORE CBA</div>
+<div class=timer id=t>⏰ OFERTA TERMINA EN: 04:23:07</div>
+<div class=big>50.000</div>
+<div class=sub>Adobe Firefly Premium</div>
+<div class=list>
+✔ 50.000 Créditos<br>
+✔ Cuenta Privada<br>
+✔ Entrega 5-10 Min<br>
+✔ Garantía Total
+</div>
+<a class="btn b1" href="#">🚀 CONSULTAR PRECIO HOY</a>
+<a class="btn b2" href="#">💬 WhatsApp</a>
+<div class=small>★★★★★ 4.9/5<br>
+🔥 127 compraron esta semana en Córdoba<br>
+👀 14 viendo ahora</div>
+<div class=pills>
+<span>💳 Mercado Pago</span>
+<span>🏦 Transferencia</span>
+<span>₿ Crypto</span>
+</div>
+<div class=pay>
+<img src="mercado.jpg">
+<img src="naranja.jpg">
+<img src="master.jpg">
+<img src="lemon.jpg">
+<img src="uala.jpg">
 </div>
 </div>
+<a class=wa href="#">💬</a>
+<script>
+let s=15287;
+setInterval(()=>{
+s--;if(s<0)s=15287;
+let h=String(Math.floor(s/3600)).padStart(2,'0');
+let m=String(Math.floor(s%3600/60)).padStart(2,'0');
+let ss=String(s%60).padStart(2,'0');
+document.getElementById('t').innerText='⏰ OFERTA TERMINA EN: '+h+':'+m+':'+ss;
+},1000);
+</script>
