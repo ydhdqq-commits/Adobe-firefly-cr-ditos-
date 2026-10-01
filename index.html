@@ -6,9 +6,10 @@
 <title>Adobe Firefly - Premium Store CBA</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{margin:0}
-.w{width:92%;max-width:420px;margin:12px auto 0}
-.c{background:rgba(0,0,0,.88);border:2px solid #ff6a00;border-radius:22px;padding:14px;color:#fff}
+body{min-height:100vh;background:#000;font-family:Arial;display:flex;flex-direction:column;align-items:center;overflow-x:hidden}
+#bgvid{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.w{width:92%;max-width:420px;margin:12px auto 0;z-index:1}
+.c{background:rgba(20,20,20,.92);border:2px solid #ff6a00;border-radius:22px;padding:14px;color:#fff}
 .top{background:#000;color:#fff;border-radius:50px;text-align:center;padding:8px 16px;font-weight:800;margin-bottom:8px;border:1px solid #333}
 .top span{color:#ff4d00}
 .pill{border:1px solid #ff6a00;color:#ff8a00;border-radius:50px;text-align:center;padding:6px;font-size:13px;font-weight:700;margin-bottom:10px}
@@ -17,12 +18,13 @@ body{margin:0}
 .pay{background:#fff;border-radius:12px;padding:8px;display:flex;justify-content:center;margin:12px 0}
 .pay img{width:100%;max-width:380px}
 .f{background:#fff;color:#000;border-radius:50px;text-align:center;padding:10px;font-weight:800;margin-top:10px}
-#bloque-abajo{width:92%;max-width:420px;display:flex;flex-direction:column;align-items:center;gap:12px;padding:20px 0 30px;margin-top:16px}
+#bloque-abajo{width:92%;max-width:420px;display:flex;flex-direction:column;align-items:center;gap:12px;padding:20px 0 30px;margin-top:16px;z-index:1}
 #bloque-abajo video{width:100%;border-radius:14px;background:#111}
 #bloque-abajo a{width:100%;background:#25D366;color:#fff;display:flex;justify-content:center;align-items:center;gap:8px;padding:16px;border-radius:50px;font:800 18px Arial;text-decoration:none}
 </style>
 </head>
 <body>
+<video id="bgvid" autoplay loop muted playsinline src="colibri.mp4"></video>
 <div class="w">
 <div class="top"><span>Adobe</span> Firefly</div>
 <div class="c">
