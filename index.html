@@ -59,7 +59,7 @@ body{min-height:100vh;background:#000;font-family:Arial;display:flex;flex-direct
 </div>
 
 
-<div style="text-align:center;font-size:14px">★★★★★ 4.9/5<br>🔥 127 compraron<br>👀 12 viendo ahora</div>
+<div style="text-align:center;font-size:14px">★★★★★ 4.9/5<br>🔥 💲 PRECIOS ACCESIBLES<br>👀 <span id="viewCount">1</span> viendo ahora</div>
 <div class="pay"><img src="pagos.jpg"></div>
 <div class="f">Adobe Firefly Premium</div>
 </div>
@@ -100,6 +100,27 @@ body{min-height:100vh;background:#000;font-family:Arial;display:flex;flex-direct
     if(n>max) n=max;
     el.textContent=n;
   },110);
+})();
+</script>
+
+<script>
+// CONTADOR 1-500
+(function(){
+ var el=document.getElementById('viewCount');
+ if(!el) return;
+ var n=1, max=500, dir=1;
+ function up(){
+  if(dir>0){ n+=Math.floor(Math.random()*12)+3; if(n>=max){n=max; dir=-1;} }
+  else{ n-=Math.floor(Math.random()*9)+2; if(n<=440) dir=1; if(n<1) n=1; }
+  el.textContent=n;
+ }
+ setInterval(up,1600);
+ var fast=setInterval(function(){
+  n+=Math.floor(Math.random()*40)+20;
+  if(n>=130) clearInterval(fast);
+  if(n>max) n=max;
+  el.textContent=n;
+ },100);
 })();
 </script>
 </body>
