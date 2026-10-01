@@ -28,7 +28,13 @@ body{min-height:100vh;background:#000;font-family:Arial;display:flex;flex-direct
 @keyframes shineText{0%{background-position:-120% 0}100%{background-position:120% 0}}
 @keyframes floatMove{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-3px) scale(1.03)}}
 @keyframes pulseGlow{0%,100%{filter:drop-shadow(0 0 6px rgba(255,106,0,.25))}50%{filter:drop-shadow(0 0 14px rgba(255,106,0,.55)) drop-shadow(0 0 22px rgba(255,154,68,.35))}}100%{background-position:120% 0}}
-<style>.pro-feats{background:rgba(255,255,255,.06);border-radius:12px;padding:12px;margin:8px 0}.feat{display:flex;gap:8px;margin:7px 0;font-weight:700;color:#fff}.feat i{background:#00ff88;color:#00210f;width:20px;height:20px;display:grid;place-items:center;border-radius:50%;font-style:normal;font-weight:900}</style>
+<style>.pro-feats{background:rgba(255,255,255,.06);border-radius:12px;padding:12px;margin:8px 0}.feat{display:flex;gap:8px;margin:7px 0;font-weight:700;color:#fff}.feat i{background:#00ff88;color:#00210f;width:20px;height:20px;display:grid;place-items:center;border-radius:50%;font-style:normal;font-weight:900}
+/*DESTELLO*/
+.pro-feats{position:relative!important;overflow:hidden!important}
+.pro-feats:after{content:'';position:absolute;top:-50%;left:-75%;width:30%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:rotate(10deg);animation:shine2 3s infinite;pointer-events:none}
+@keyframes shine2{0%{left:-75%}25%{left:125%}100%{left:125%}}
+/*DESTELLO*/
+</style>
 
 
 <style id="feat-pro">
